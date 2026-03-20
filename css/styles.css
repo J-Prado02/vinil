@@ -8,10 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 
-html, body{
-    width: auto;
-}
-
 :root{
   --bg: #0a0f1c;
   --bg-soft: #192744;
@@ -74,8 +70,9 @@ html, body{
   }
 
   .menu{
-    position: absolute;
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 8vh;
     align-items: center;
@@ -121,13 +118,18 @@ html, body{
   }
 
   .menu {
+    flex-direction: column;
     height: auto;
     padding: 10px 0;
+    align-items: center;
   }
 
   .menu ul {
     flex-direction: column;
     gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
 }
