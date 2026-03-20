@@ -121,14 +121,12 @@ html, body{
   }
 
   .menu {
-    display: flex;
-    flex-direction: row;
     height: auto;
     padding: 10px 0;
   }
 
   .menu ul {
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
 
